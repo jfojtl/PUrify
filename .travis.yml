@@ -1,0 +1,9 @@
+
+language: C
+
+install:
+ - sudo apt-get install cmake mono-devel mono-gmcs
+
+script:
+ - ./build.sh
+
