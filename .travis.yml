@@ -2,7 +2,6 @@
 language: C
 
 install:
- - mozroots --import --sync
  - sudo wget -q -P "/opt" "https://dl.dropboxusercontent.com/u/60324283/mono-3.2.3.tar.bz2"
  - sudo tar xkv -C "/opt" -f /opt/mono-3.2.3.tar.bz2
  - export PATH="/opt/mono/bin:$PATH"
