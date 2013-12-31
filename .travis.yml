@@ -2,12 +2,12 @@
 language: C
 
 install:
- - sudo apt-get install mono-devel mono-gmcs mono-vbnc
  - mozroots --import --sync
- - sudo wget -q -P "/opt"  "http://samples.nancyfx.org/content/mono-3.0.12-x64-bin.tar.bz2"
- - sudo tar xkv -C "/opt" -f /opt/mono-3.0.12-x64-bin.tar.bz2
+ - sudo wget -q -P "/opt" "https://dl.dropboxusercontent.com/u/60324283/mono-3.2.3.tar.bz2"
+ - sudo tar xkv -C "/opt" -f /opt/mono-3.2.3.tar.bz2
  - export PATH="/opt/mono/bin:$PATH"
  - export LD_LIBRARY_PATH="/opt/mono/bin"
+ - mozroots --import --sync 
  - mono --version
 
 script:
