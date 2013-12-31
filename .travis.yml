@@ -2,7 +2,7 @@
 language: C
 
 install:
- - sudo wget -q -P "/opt/mono-3.2.3.tar.bz2" "https://db.tt/i2ax1CWN"
+ - sudo wget -q -P "/opt" "https://dl.dropboxusercontent.com/u/60324283/mono-3.2.3.tar.bz2"
  - sudo mkdir /opt/mono
  - sudo tar xkv -C "/opt/mono" -f /opt/mono-3.2.3.tar.bz2
  - export PATH="/opt/mono/bin:$PATH"
