@@ -27,6 +27,7 @@ Target "PrepareForTests" (fun _ ->
     "xunit.runners"
         |> RestorePackageId (fun p ->
             { p with 
+                Sources = ["http://nuget.org/api/v2/"];
                 ExcludeVersion = true; 
                 OutputPath = "./tools" })
 )
