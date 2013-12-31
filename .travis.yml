@@ -2,7 +2,10 @@
 language: C
 
 install:
- - sudo apt-get install cmake mono-devel mono-gmcs
+ - sudo wget -q -P "/opt"  "http://samples.nancyfx.org/content/mono-3.0.12-x64-bin.tar.bz2"
+ - echo sudo tar xkv -C "/opt" -f /opt/mono-3.0.12-x64-bin.tar.bz2
+ - echo export PATH="/opt/mono/bin:$PATH"
+ - echo export LD_LIBRARY_PATH="/opt/mono/bin"
 
 script:
  - ./build.sh
